@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: right;
+    padding: 50px 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+header button{
+    padding: 13px 37px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: #fff;
+    background: transparent;
+}
+.intro{
+    height: 631px;
+    background-image: url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.intro .shadow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #24202E;
+    opacity: .75;
+}
+.intro .content{
+    text-align: center;
+    color: white;
+    padding-top: 220px;
+    z-index: 1;
+    position: relative;
+}
+.intro .content p{
+    font-size: 33px;
+}
+.intro .content p span{
+    color: #04BEF3;
+}
+.intro .content h1{
+    font-size: 68px;
+    font-weight: 900;
+}
+.intro .content button{
+    letter-spacing: 0.72px;
+    color: #FFFFFF;
+    padding: 9px 22px;
+    background-color: #04BEF3;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+}
