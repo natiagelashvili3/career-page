@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 
 *{
     margin: 0;
@@ -21,15 +21,7 @@ header button{
     color: #fff;
     background: transparent;
 }
-.intro{
-    height: 631px;
-    background-image: url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.intro .shadow{
+.shadow{
     position: absolute;
     left: 0;
     top: 0;
@@ -37,6 +29,16 @@ header button{
     bottom: 0;
     background-color: #24202E;
     opacity: .75;
+}
+
+
+.intro{
+    height: 631px;
+    background-image: url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .intro .content{
     text-align: center;
@@ -63,4 +65,55 @@ header button{
     border-radius: 5px;
     border: none;
     margin-top: 30px;
+}
+
+
+.section-2{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section-2 div{
+    max-width: 822px;
+    margin: 0 auto;
+}
+.section-2 h2{
+    margin-top: 85px;
+    letter-spacing: 1.6px;
+    color: #24202E;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+.section-2 p{
+    font-weight: 300;
+    color: #24202E;
+    font-size: 19px;
+}
+
+.section-3{
+    position: relative;
+    height: 411px;
+    margin-bottom: 500px;
+    background-image: url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-3 .content{
+    max-width: 822px;
+    margin: 0 auto;
+    padding-top: 162px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.section-3 .content h2{
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 1.92px;
+}
+.section-3 .content{
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.96px;
+    color: #FFFFFF;
 }
