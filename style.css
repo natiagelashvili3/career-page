@@ -91,7 +91,8 @@ header button{
 .section-3{
     position: relative;
     height: 411px;
-    background-image: url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /* background-image: url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    background-image: url('images/img_lights.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -114,7 +115,6 @@ header button{
     color: #FFFFFF;
 }
 .section-4{
-    margin-bottom: 500px;
     margin-top: 75px;
 }
 .section-4 .heading {
@@ -151,4 +151,44 @@ header button{
     list-style-type: none;
     font-weight: 300;
     margin-bottom: 10px;
+}
+
+footer{
+    height: 520px;
+    background-color: #24202E;
+    color: white;
+    text-align: center;
+    margin-top: 115px;
+}
+
+.footer-title p:first-child{
+   font-size: 53px; 
+   text-transform: capitalize;
+   margin-top: 100px;
+   display: inline-block;
+}
+
+.footer-title p:last-child{
+   font-size: 38px;
+   font-weight: 300;
+   margin-top: 20px;
+}
+
+.socials{
+    margin-top: 65px;
+    display: inline-block;
+    text-align: left;
+}
+.socials div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.socials img{
+    width: 30px;
+    margin-right: 25px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
 }
