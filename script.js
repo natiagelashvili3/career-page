@@ -1,128 +1,47 @@
-// amocana 4
-// var lastname = "gelashvili";
-// var result = lastname.split("").join("*");
-// console.log(result);
+// 1.
+// var student = {
+//     name: "",
+//     lastname: "",
+//     course: "",
 
-// amocana 5
-//var arr = [2, 4, 6, 8, 10, 12, 14];
-//[arr[0], arr[arr.length - 1]] = [arr[arr.length - 1], arr[0]]
-// var first = arr.shift();
-// var last = arr.pop();
-// arr.push(first);
-// arr.unshift(last);
-//console.log(arr);
+//     getData: function() {
+//         console.log( this.name + " " + this.lastname + " " + this.course ); // this == student
+//     }    
+// };
 
-// amocana 6
-// var str = "world";  // -> dlrow
-// var result = '';
+// student.name = "David";
+// student.lastname = "Menabde";
+// student.course = 2;
+// student.getData();
 
-// for (let i = 1; i <= str.length; i++) {
-//     result += str[ str.length - i ];
-// }
+// 2.
+// var car = {
+//     model: "Toyota",
+//     year: 2020,
 
-// console.log(result);
-
-// amocana 7
-// var str = "world";
-// var str1 = "Hello";
-// var str2 = "Hello World";  //ello Worl
-// var str3 = "Hello World, How are you";
-
-
-// function slice_string(str) {
-//     console.log( str.slice(1, str.length - 1) );
-// }
-
-// slice_string(str);
-// slice_string(str1);
-// slice_string(str2);
-// slice_string(str3);
-
-// amocana 8
-// var str = "Hello my   world";
-// var splited = str.split(" ");
-// var result = "";
-
-// for (let i = 0; i < splited.length; i++) {
-//     if(splited[i] != "") {
-//         result += splited[i];
+//     getModel: function() {
+//         console.log( this.model );
 //     }
 // }
 
-// console.log(result);
+// car.getModel();
 
 
 
+// getElementById
+// innerText
+// innerHTML
+// style
 
 
-
-// amocana 9-1
-// function getString(name, lastaname, age) {
-//     console.log( name + " " + lastaname + " " + age );
-// }
-
-// getString("Mariam", "Menabde", 18);
+var box1 = document.getElementById("box-1");
+box1.style.color = "red";
 
 
-
-// amocana 9-2
-// var age = prompt("Enter Your Age:");
-
-// if(age < 18) {
-//     console.log("Under 18");
-// } else {
-//     console.log("Over 18");
-// }
-
-// amocana 9-3
-
-// function generateEvens(x){
-//     for (let i = 0; i < 3; i++) {
-//         console.log(x);
-        
-//     }
-// }
-
-// function generateOdds(x){
-//     console.log(x);
-// }
-
-// var number = prompt("Enter number: ");
-// if (number) {
-//     if (number%2 == 0) {
-//         generateEvens(number);
-//     } else {
-//         generateOdds(number);
-//     }
-// }
+var box2 = document.getElementById("box-2");
+box2.innerHTML = "<span>hello</span>";
 
 
-
-
-
-var person = { 
-    name: null, 
-    lastname: null,
-
-    getName: function() {
-        console.log( this.name );
-    },
-
-    setName: function(name) {
-        this.name = name;
-    },
-
-    getLastaname: function() {
-        console.log( this.lastname );
-    },
-
-    setLastname: function(lastname) {
-        this.lastname = lastname;
-    },
-};
-
-person.setName("Mariam");
-person.getName();
-
-person.setLastname("Menabde");
-person.getLastaname();
+box2.style.backgroundColor = "green";
+box2.style.width = "200px";
+box2.style.height = "200px";
