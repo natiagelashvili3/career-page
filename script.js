@@ -1,47 +1,85 @@
-// 1.
-// var student = {
-//     name: "",
-//     lastname: "",
-//     course: "",
+// ------------ davalebebi ------------------
 
-//     getData: function() {
-//         console.log( this.name + " " + this.lastname + " " + this.course ); // this == student
-//     }    
-// };
+// var box = document.getElementById('box-1');
 
-// student.name = "David";
-// student.lastname = "Menabde";
-// student.course = 2;
-// student.getData();
+// // 1
+// box.style.backgroundColor = 'rgb(0, 0, 255)';
 
-// 2.
-// var car = {
-//     model: "Toyota",
-//     year: 2020,
+// // 2
+// box.innerText = "this is a blue div";
 
-//     getModel: function() {
-//         console.log( this.model );
-//     }
+// // setTimeout(function() {
+// //     box.innerHTML = "<p>this is a blue div 2</p>";
+// // }, 4000);
+
+// // 3
+// box.style.color = "#fff"; 
+
+// // 4
+// box.style.width = "500px";
+// box.style.height = "500px";
+
+// // 5
+// box.style.fontSize = "25px";
+
+
+
+
+
+// --------------- addEventLister funqcia
+
+// var button = document.getElementById('change-bg');
+// var box = document.getElementById('box-1');
+
+
+// function generateRGB() {
+//     var r = Math.floor(Math.random() * 100);
+//     var g = Math.floor(Math.random() * 100);
+//     var b = Math.floor(Math.random() * 100);
+
+//     return "rgb("+r+", "+g+", "+b+")";
 // }
 
-// car.getModel();
+
+// button.addEventListener("click", function(){
+//     box.style.backgroundColor = generateRGB();
+// });
+
+
+// var button_text = document.getElementById('change-text');
+// button_text.addEventListener("click", function() {
+//     box.style.color = generateRGB();
+// });
 
 
 
-// getElementById
-// innerText
-// innerHTML
-// style
+// --------------- getElementsByClassName funqcia
+
+function generateRGB() {
+    var r = Math.floor(Math.random() * 100);
+    var g = Math.floor(Math.random() * 100);
+    var b = Math.floor(Math.random() * 100);
+
+    return "rgb("+r+", "+g+", "+b+")";
+}
 
 
-var box1 = document.getElementById("box-1");
-box1.style.color = "red";
+var button = document.getElementById('change-bg');
+
+var boxes = document.getElementsByClassName('box');
+
+button.addEventListener('click', function() {
+    var bg_color = generateRGB();
+
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = bg_color;
+    }
+    
+});
+
+// addEventListener
+// getElementsByClassName
+// Math -> floot - random
 
 
-var box2 = document.getElementById("box-2");
-box2.innerHTML = "<span>hello</span>";
 
-
-box2.style.backgroundColor = "green";
-box2.style.width = "200px";
-box2.style.height = "200px";
