@@ -1,85 +1,53 @@
-// ------------ davalebebi ------------------
+var burger = document.getElementById('burger');
+var header = document.getElementById('header');
 
-// var box = document.getElementById('box-1');
+burger.addEventListener('click', function() {
+    if(header.classList.contains('open')) {
+        header.classList.remove('open');
+        burger.classList.remove('open');
+    } else {
+        header.classList.add('open');
+        burger.classList.add('open');
+    }
+});
 
-// // 1
-// box.style.backgroundColor = 'rgb(0, 0, 255)';
+// var popup = document.getElementById('popup');
 
-// // 2
-// box.innerText = "this is a blue div";
-
-// // setTimeout(function() {
-// //     box.innerHTML = "<p>this is a blue div 2</p>";
-// // }, 4000);
-
-// // 3
-// box.style.color = "#fff"; 
-
-// // 4
-// box.style.width = "500px";
-// box.style.height = "500px";
-
-// // 5
-// box.style.fontSize = "25px";
-
-
-
-
-
-// --------------- addEventLister funqcia
-
-// var button = document.getElementById('change-bg');
-// var box = document.getElementById('box-1');
-
-
-// function generateRGB() {
-//     var r = Math.floor(Math.random() * 100);
-//     var g = Math.floor(Math.random() * 100);
-//     var b = Math.floor(Math.random() * 100);
-
-//     return "rgb("+r+", "+g+", "+b+")";
-// }
-
-
-// button.addEventListener("click", function(){
-//     box.style.backgroundColor = generateRGB();
+// document.getElementById('popup-btn').addEventListener('click', function() {
+//     popup.classList.add('active');
 // });
 
-
-// var button_text = document.getElementById('change-text');
-// button_text.addEventListener("click", function() {
-//     box.style.color = generateRGB();
+// document.getElementById('popup-close').addEventListener('click', function() {
+//     popup.classList.remove('active');
 // });
 
+// var popup1 = document.getElementById('popup-1');
+
+// document.getElementById('popup-btn-1').addEventListener('click', function() {
+//     popup1.classList.add('active');
+// });
+
+// var div = document.getElementById('test');
+
+// console.log( div.setAttribute('data-id', '66') );
 
 
-// --------------- getElementsByClassName funqcia
 
-function generateRGB() {
-    var r = Math.floor(Math.random() * 100);
-    var g = Math.floor(Math.random() * 100);
-    var b = Math.floor(Math.random() * 100);
 
-    return "rgb("+r+", "+g+", "+b+")";
+var btns = document.getElementsByClassName('popup-btn');
+
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() {
+        var popupId = this.getAttribute('data-popup-id');
+        document.getElementById(popupId).classList.add('active');
+    });
 }
 
 
-var button = document.getElementById('change-bg');
+var btnsClose = document.getElementsByClassName('popup-close');
 
-var boxes = document.getElementsByClassName('box');
-
-button.addEventListener('click', function() {
-    var bg_color = generateRGB();
-
-    for (let i = 0; i < boxes.length; i++) {
-        boxes[i].style.backgroundColor = bg_color;
-    }
-    
-});
-
-// addEventListener
-// getElementsByClassName
-// Math -> floot - random
-
-
-
+for(let i=0; i< btnsClose.length; i++) {
+    btnsClose[i].addEventListener('click', function() {
+        this.parentNode.parentNode.parentNode.classList.remove('active');
+    });
+}

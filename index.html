@@ -7,8 +7,20 @@
 </head>
 <body>
 
-    <header>
-        
+
+    <div id="test" data-id="" data-name="test-box">
+
+    </div>
+
+
+
+    <div id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <header id="header" class="">
         <menu>
             <ul>
                 <li>
@@ -43,7 +55,7 @@
             <h1>
                 Come work with us
             </h1>
-            <button>Current Opening</button>
+            <button class="popup-btn" data-popup-id="popup-1">Current Opening</button>
         </div>
     </section>
 
@@ -53,6 +65,7 @@
             <p>
                 Join our team in Dubai to help reshape the UI/UX Design landscape and make products that reach over 20 million users worldwide.
             </p>
+            <button class="popup-btn" data-popup-id="popup-4">New popup</button>
         </div>
     </section>
 
@@ -67,6 +80,9 @@
                 Make some friends
             </h2>
             <span>and a few enemies</span>
+            <div>
+                <button class="popup-btn" data-popup-id="popup-2">Open</button>
+            </div>
         </div>
     </section>
 
@@ -74,6 +90,7 @@
         <div class="heading container">
             <span>What’s your passion? Check out all our open spots below.</span>
             <h3>UAE - DUBAI</h3>
+            <button class="popup-btn" data-popup-id="popup-3">Open popup 3</button>
         </div>
 
         <div class="list">
@@ -126,6 +143,55 @@
         </div>
     </footer>
 
+
+    <div class="popup" id="popup-1">
+        <div class="popup-box">
+            <div class="content">
+                <div class="popup-body">
+                    <h3>Modal title 1</h3>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </div>
+                <button class="popup-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+        <div class="popup-box">
+            <div class="content">
+                <div class="popup-body">
+                    <h3>Modal title 2</h3>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </div>
+                <button class="popup-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-3">
+        <div class="popup-box">
+            <div class="content">
+                <div class="popup-body">
+                    <h3>Modal title 3</h3>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </div>
+                <button class="popup-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-4">
+        <div class="popup-box">
+            <div class="content">
+                <div class="popup-body">
+                    <h3>Modal title 4</h3>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </div>
+                <button class="popup-close">Close</button>
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
     
 </body>
